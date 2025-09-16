@@ -2,7 +2,7 @@ import Foundation
 
 class YelpSearchService {
     
-    private let apiKey = "cVIFnGVzfHFFWtvZUhDKkB29nVnRQlt5EwocZ_yhlqgcakSwMqOB98L_SkMPP7ZCo-7frPh-wLoc0uE8yCMA5sHP4Fq8_kHTHhJLA-5-B39ZWzKsB7uGCzOheV6_aHYx"
+    private let apiKey = "API_KEY_HERE"
     
     func searchBusinesses(
         latitude: Double,
