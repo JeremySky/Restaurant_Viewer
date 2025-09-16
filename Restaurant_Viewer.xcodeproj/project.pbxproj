@@ -6,13 +6,8 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		628495252E7366410026D91A /* CardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628495242E7366410026D91A /* CardStack.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		628494552E6F7FA20026D91A /* Restaurant_Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Restaurant_Viewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		628495242E7366410026D91A /* CardStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -37,7 +32,6 @@
 		6284944C2E6F7FA20026D91A = {
 			isa = PBXGroup;
 			children = (
-				628495242E7366410026D91A /* CardStack.swift */,
 				628494572E6F7FA20026D91A /* Restaurant_Viewer */,
 				628494562E6F7FA20026D91A /* Products */,
 			);
@@ -125,7 +119,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				628495252E7366410026D91A /* CardStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
