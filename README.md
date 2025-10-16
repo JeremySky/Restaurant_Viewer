@@ -28,13 +28,19 @@ An iOS app leveraging **Yelp's Search API** 🍕 and **Swift's CoreLocation** �
 
 ---
 
-## 🛠️ Requirements
+## 💡 Skills Demonstrated
 
-- iOS 16+ 🍏  
-- Xcode 15+ 💻  
-- Swift 5.9+ 🐦  
-- Yelp API Key 🔑
-
+- Swift & SwiftUI for declarative UI development
+- Async/await concurrency for modern asynchronous programming
+- CoreLocation for geolocation functionality
+- Persistence with UserDefaults / local storage
+- MVVM architecture for clean, testable code
+- Dependency injection for modular and testable services
+- Modular service design with LocationService & YelpSearchService
+- Mock data support for testing loading, empty, and loaded states
+- Error handling for robust user experience
+- Adaptive UI for multiple devices and orientations
+  
 ---
 
 ## ⚡ Setup
