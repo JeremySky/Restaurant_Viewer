@@ -12,6 +12,7 @@ An iOS app leveraging **Yelp's Search API** 🍕 and **Swift's CoreLocation** �
 - **Card stack interface** 🃏:
   - Tap **Next** ➡️ card animates off-screen left  
   - Tap **Previous** ⬅️ card animates to center from left  
+- **Favorite restaurants** 💖 are persisted across app launches 
 - Handles **errors gracefully** ⚠️:
   - Location errors 📌  
   - Network errors 🌐  
