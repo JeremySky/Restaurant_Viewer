@@ -2,7 +2,13 @@
 
 An iOS app leveraging **Yelp's Search API** 🍕 and **Swift's CoreLocation** 📍 to display restaurants based on user-selected criteria like category and sort order 🔍. Browse nearby dining spots 🌆✨ with a responsive, card-based UI 🃏 built with **SwiftUI** and modern **async/await concurrency**.
 
-![App Demo](Restaurant_Viewer_Portrait_Demo.gif)
+<table>
+  <tr>
+    <td><img src="Restaurant_Viewer_Portrait_Demo.gif" width="280" /></td>
+    <td><img src="Restaurant_Viewer_Landscape_Demo.gif" width="667" /></td>
+  </tr>
+</table>
+
 ---
 
 ## 🚀 Features
