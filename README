@@ -1,0 +1,38 @@
+# 🍽️ Yelp Restaurant Explorer
+
+An iOS app leveraging **Yelp's Search API** 🍕 and **Swift's CoreLocation** 📍 to show restaurants based on user-selected criteria like category and sort order 🔍. Browse nearby dining spots 🌆✨ with a smooth, card-based UI 🃏.
+
+---
+
+## 🚀 Features
+
+- Fetch restaurants using **Yelp's Search API** 🍴  
+- Use **CoreLocation** to get your current location 📍  
+- Search and sort restaurants by **category** 🍔, 🍣, 🍕 and **sort order** 🔍  
+- **Card stack interface** 🃏:
+  - Tap **Next** ➡️ card animates off-screen left  
+  - Tap **Previous** ⬅️ card animates to center from left  
+- Handles **errors gracefully** ⚠️:
+  - Location errors 📌  
+  - Network errors 🌐  
+  - API/data decoding errors 🛠️  
+- **Dynamic layouts** for iPhone & iPad 📱💻:
+  - Portrait & landscape orientation 🔄  
+  - Split-screen multitasking on iPad 🖼️
+
+---
+
+## 🛠️ Requirements
+
+- Yelp API Key 🔑
+
+---
+
+## ⚡ Setup
+
+1. Obtain a **Yelp API Key** by creating an app at [Yelp Developers](https://www.yelp.com/developers) 🔑  
+2. Open the project in Xcode 💻  
+3. In `YelpSearchServices.swift`, replace the placeholder with your API Key:
+
+```swift
+private let apiKey = "API_KEY_HERE"
