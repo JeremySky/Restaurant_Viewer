@@ -5,7 +5,9 @@ struct Restaurant_ViewerApp: App {
     
     var body: some Scene {
         WindowGroup {
-            MainView()
+            NavigationStack {
+                MainView(viewModel: ViewModel())
+            }
         }
     }
 }

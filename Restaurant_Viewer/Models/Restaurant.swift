@@ -1,27 +1,64 @@
 import Foundation
 
-struct Restaurant: Codable, Identifiable {
+
+
+struct Restaurant: Codable, Identifiable, Equatable {
     let id: String
     var name: String?
     var rating: Double?
     var imageURL: String?
+    var distance: Double?
+    
+    //MARK: User-Specific Data
+    var isFavorite: Bool?
+    
+    //MARK: UI-Specific Data for LazyCardStack
+    var animationPhase: CardAnimationPhase?
+    
+    //MARK: - Computed Properties
+    var formattedRating: String {
+        String(format: "%.1f", self.rating ?? 0)
+    }
+    
+    var formattedDistance: String {
+        guard let distance else { return "0.0" }
+        
+        let miles = distance / 1609
+        return String(format: "%.1f", miles)
+    }
     
     enum CodingKeys: String, CodingKey {
         case id = "id"
         case name = "name"
         case rating = "rating"
         case imageURL = "image_url"
+        case distance = "distance"
     }
 }
 
 #if DEBUG
 extension Restaurant {
-    static var mock: Self {
-        Restaurant(
+    enum MockScenario {
+        case loaded, loading, empty
+    }
+    
+    static func mock(_ scenario: MockScenario) -> Restaurant {
+        var imageURL: String? {
+            switch scenario {
+            case .loaded:
+                "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400"
+            case .loading:
+                "loading"
+            case .empty:
+                nil
+            }
+        }
+        
+        return Restaurant(
             id: "mock",
             name: "Mock",
             rating: 5.0,
-            imageURL: "https://s3-media0.fl.yelpcdn.com/bphoto/JdYEpogOfYw5KkWzVGB23Q/o.jpg"
+            imageURL: imageURL
         )
     }
     
@@ -30,25 +67,28 @@ extension Restaurant {
             id: "1",
             name: "The Golden Spoon",
             rating: 4.8,
-            imageURL: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400"
+            imageURL: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400",
+            animationPhase: .current
         ),
         Restaurant(
             id: "2",
             name: "Pasta Paradise",
             rating: 4.5,
-            imageURL: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400"
+            imageURL: nil,
+            animationPhase: .current
         ),
         Restaurant(
             id: "3",
             name: "Sakura Sushi",
             rating: 4.9,
-            imageURL: "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=400"
+            imageURL: "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=400",
+            animationPhase: .current
         ),
         Restaurant(
             id: "4",
             name: "BBQ Pit Stop",
             rating: 4.3,
-            imageURL: "https://images.unsplash.com/photo-1544025162-d76694265947?w=400"
+            imageURL: "https://images.unsplash.com/photo-1544025162-d76694265947?w=400",
         ),
         Restaurant(
             id: "5",

@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		62D499BF2E79184100D97C34 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 62D499BB2E79184100D97C34 /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		628494552E6F7FA20026D91A /* Restaurant_Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Restaurant_Viewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62D499BB2E79184100D97C34 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -34,6 +39,7 @@
 			children = (
 				628494572E6F7FA20026D91A /* Restaurant_Viewer */,
 				628494562E6F7FA20026D91A /* Products */,
+				62D499BB2E79184100D97C34 /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +115,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62D499BF2E79184100D97C34 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
